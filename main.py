@@ -117,6 +117,11 @@ def main():
                 top_scores = db.get_top_scores()
                 data_saved = True
 
+                # Очищаем список врагов при первом входе в game_over
+                enemies.clear()
+                # Также очищаем пули игрока
+                player.bullets.clear()
+
             msg = header.render("ИГРА ОКОНЧЕНА", True, (255, 50, 50))
             msg_rect = msg.get_rect(center=(WIDTH // 2, 100))
             screen.blit(msg, msg_rect)
