@@ -17,3 +17,4 @@ Thumbs.db
 
 # Расширения Pygame/Логи (если появятся)
 *.log
+scores.db
